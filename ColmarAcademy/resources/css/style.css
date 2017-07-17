@@ -1,0 +1,742 @@
+/*----Universal Styles----*/
+
+body {
+  margin: 0px;
+  background-image: linear-gradient(
+    right,
+    rgb(188, 144, 127),
+    rgb(190, 193, 190)
+    );
+}
+
+
+h1 {
+  font-family: "Halant", serif;
+  font-size: 3.25rem;
+  font-weight: 600;
+}
+
+h2 {
+  font-family: "Halant", serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.75rem;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+h4 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+h5 {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 995px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.25rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-size: 1rem;
+  }
+
+  h5 {
+    font-size: 1rem;
+  }
+
+}
+
+@media screen and (max-width: 862px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+
+  h4 {
+    font-size: 0.75rem;
+  }
+
+  h5 {
+    font-size: 0.75rem;
+  }
+
+}
+
+@media screen and (max-width: 617px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  h2 {
+    font-size: 1.25rem;
+  }
+
+}
+
+/*----Header/Logo----*/
+header {
+  position: fixed;
+  width: 100%;
+  height: 4rem;
+  background: linear-gradient(90deg, white, rgb(188, 144, 127));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 5;
+  border-bottom: 1px solid white;
+}
+
+.logo {
+    padding-left: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+  height: 3rem;
+}
+
+.logo span {
+  font-size: 1.5rem;
+  font-family: "Halant", serif;
+  font-weight: 600;
+  color: rgb(37, 36, 36);
+}
+
+#red {
+  color: rgb(130, 43, 48);
+}
+
+/*----Header/Nav----*/
+.mobile {
+  display: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  flex-shrink: 1;
+  z-index: 10;
+  padding-right: 1.5rem;
+}
+
+.nav .btn {
+   padding: 0.5rem;
+   display: flex;
+   flex-shrink: 1;
+   align-items: center;
+   font-family: "Raleway", sans-serif;
+   font-weight: 500;
+}
+
+.nav .btn a, .nav .btn a:visited {
+  color:white;
+  text-decoration: none;
+}
+
+.nav .btn span {
+  padding: 1.44rem 0;
+  border: 0px solid white;
+  transition: all 200ms ease-out;
+}
+
+.nav .btn:hover span, .nav .btn:active span{
+  border-top: 5px solid white;
+  border-radius: 7px;
+}
+
+@media screen and (max-width: 641px) {
+  .logo {
+    display: none;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .mobile {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #mlogo {
+    padding: .2rem .25rem 0 .25rem;
+    border: 0.75px solid rgb(130, 43, 48);
+    border-radius: 3px;
+  }
+
+  .mobile img {
+    padding-top: .2rem;
+  }
+}
+
+/*----Jumbotron----*/
+.jumbotron {
+  display: flex;
+  position: relative;
+  top: 4rem;
+  background: linear-gradient(330deg, rgb(190, 193, 190), white, white);
+  width: 100%;
+  height: auto;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid white;
+
+}
+
+.jimg {
+  margin-left: 1.5rem;
+  margin-top: 2rem;
+  width: 60%;
+  height: auto;
+}
+
+.jimg img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.jcontent {
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  padding-left: 2.5rem;
+  justify-content: center;
+}
+
+.jcontent h1,
+.jcontent h3 {
+  padding: 0.5rem 0px;
+  max-width: 90%
+}
+
+.jcontent .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  height: 3rem;
+  border: 1px solid rgb(188, 144, 127);
+  border-radius: 3px;
+  margin-top: 1rem;
+  transition: all 250ms ease-out;
+}
+
+.jcontent .btn h3,
+.jcontent .btn h3 a:visited {
+  padding: 0.5rem;
+  font-weight: 500;
+  text-align: center;
+  color: rgb(130, 43, 48)
+}
+
+.jcontent .btn a {
+  text-decoration: none;
+}
+
+.jcontent .btn:hover,
+.jcontent .btn:active,
+.jcontent .btn:hover a:visited,
+.jcontent .btn:active a:visited {
+  background-color: rgb(130, 43, 48);
+  color: white;
+}
+
+@media screen and (max-width: 470px){
+  .jumbotron {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .jimg {
+    margin-left: 0;
+    margin-top: 0;
+    width: 100%;
+    max-height: 180px;
+    overflow: hidden;
+  }
+
+  .jcontent {
+    width: 100%;
+    padding-left: 0;
+    padding-top: 2rem;
+    justify-content: space-around;
+  }
+
+  .jcontent h1 {
+    padding-bottom: 1.5rem;
+    padding-left: 1rem;
+  }
+
+  .jcontent h3 {
+    padding-left: 1rem;
+  }
+
+  .jcontent .btn {
+    width: 90%;
+    margin-left: 1rem;
+  }
+}
+
+/*----Highlights----*/
+.highlights {
+  position: relative;
+  top: 4rem;
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding-top: 2rem;
+  background: linear-gradient(280deg, rgba(188, 144, 127, 0.5), white, white);
+  border-bottom: 1px solid white;
+}
+
+.himg {
+  margin: 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding-right: 1.5rem;
+}
+
+.himg img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 2rem;
+}
+
+.himg h2 {
+  padding-bottom: 1.5rem;
+}
+
+.himg h4 {
+  padding-bottom: 2rem;
+}
+
+.himg p {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding-bottom: 4rem;
+}
+
+.hcards {
+  display: flex;
+  flex-direction: column;
+  width: 423px;
+}
+
+.mobile-hcards {
+  display: none;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.card img {
+  width: 35%;
+  height: 100%;
+  margin: 0 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid white;
+}
+
+.card-content h5 {
+  padding-top: 1.5rem;
+}
+
+.card-content p {
+  padding: 0.5rem 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+#readmore a{
+  text-decoration: none;
+  font-weight: 500;
+  color: rgb(130, 43, 48);
+}
+
+@media screen and (max-width: 995px) {
+  .card-content h5 {
+    font-size: 1.25rem;
+  }
+
+  .card-content p,
+  .himg p {
+    font-size: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 862px) {
+  .card-content h5 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .himg,
+  .hcards {
+    display: none;
+  }
+
+  .highlights {
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  .mobile-hcards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 92%;
+    height: auto;
+    margin: 0;
+  }
+
+  .card img {
+    width: 100%;
+    margin: 1rem 0 0 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid white;
+    padding-left: 1rem;
+  }
+
+  .card-content h5 {
+    padding-top: 1.5rem;
+  }
+
+  .card-content p {
+    padding: 0.5rem 0 0 0;
+    font-family: "Raleway", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+  }
+
+}
+
+/*----Courses----*/
+.courses {
+  position: relative;
+  top: 4rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(250deg, rgb(190, 193, 190), white);
+  padding-bottom: 2rem;
+  border-bottom: 1px solid white;
+}
+
+.courses h2 {
+  padding: 2rem 0;
+}
+
+.lcards {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  height: auto;
+  justify-content: center;
+}
+
+.mobile-lcards {
+  display: none;
+}
+
+.lcard {
+  width: 18.5625rem;
+  height: 21rem;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin: 0.5rem 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.lcard img{
+  height: auto;
+  width: 100%;
+}
+
+.lc-content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.lcard h5 {
+  padding: 1rem;
+}
+
+.lcard p {
+  padding: 0 1rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  width: 100%;
+  line-height: 1.4;
+}
+
+#course {
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+@media screen and (max-width: 470px) {
+  .lcards {
+    display: none;
+  }
+
+  .courses h2 {
+    font-size: 2rem;
+  }
+
+  .mobile-lcards {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mobile-lcard:nth-child(2n+2){
+    margin: 0.5rem 0;
+  }
+
+  .mobile-lcard {
+    width: 100%;
+    height: 3rem;
+    border: 1px solid rgba(255, 255, 255, 1);
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: 	rgb(37, 36, 36);
+    background: rgba(188, 144, 127, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .mobile-lcard img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .mobile-lcard h4 {
+    font-size: 1rem;
+  }
+}
+
+/*----Exhibit----*/
+.exhibit {
+  position: relative;
+  top: 4rem;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(270deg, rgb(37, 36, 36), white);
+  padding-bottom: 2rem;
+}
+
+.exhibit h2 {
+  text-align: center;
+  padding: 2rem 0;
+  color: white;
+}
+
+.ex-container {
+  display: flex;
+  width: 90%;
+  height: auto;
+  justify-content: center;
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.video video {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.video h5 {
+  padding-top: 1.5rem;
+}
+
+.video p {
+  padding: 0.5rem 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.ex-cards {
+  display: flex;
+  flex-direction: column;
+  width: 423px;
+  padding-left: 1rem;
+}
+
+.ex-card {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 2rem;
+}
+
+.ex-card img {
+  width: 35%;
+  height: 100%;
+  margin: 0 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ex-card-content {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid white;
+}
+
+.ex-card-content h5 {
+  padding-top: 1.5rem;
+  color: white;
+}
+
+.ex-card-content p {
+  padding: 0.5rem 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: white;
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 470px) {
+  .video h5,
+  .video p,
+  .ex-cards {
+    display: none;
+  }
+
+  .ex-container {
+    width: 100%;
+  }
+
+  .video {
+    width: 98.8%;
+  }
+
+  .video video {
+    box-shadow: none;
+    border: 1px solid white;
+  }
+}
+
+/*----Footer----*/
+footer {
+  position: relative;
+  top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.5rem;
+  width: 100%;
+}
+
+footer h4 {
+  padding-left: 1.5rem;
+  font-size: 1rem;
+}
+
+.rightfoot a{
+  padding-right: 1.5rem;
+  text-decoration: none;
+  font-family: "Raleway", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(130, 43, 48);
+}
+
+@media screen and (max-width: 470px) {
+  .rightfoot {
+    display: none;
+  }
+
+  footer {
+    justify-content: center;
+  }
+
+  footer h4 {
+    font-size: 0.75rem;
+  }
+}
